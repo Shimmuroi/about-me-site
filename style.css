@@ -1,0 +1,384 @@
+body { 
+    background-color: #f7f5f0; 
+    margin: 0; 
+    padding-bottom: 100px;
+}
+
+.navigation {
+    background-color: wheat;
+    padding: 20px 20px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: blue;
+    background-color: lightskyblue;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.navigation #themeBtn {
+    float: right;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.navigation #themeBtn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.navigation #themeBtn:active {
+    background-color: #555;
+    transform: scale(0.97);
+}
+
+.layout {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.left-col {
+    flex: 2;
+    width: 50%;
+}
+
+.right-col {
+    flex: 2;
+    width: 50%;
+}
+
+.left-col #home {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position:relative;
+}
+
+.left-col #editJobBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    width: auto;
+}
+
+.left-col #editJobBtn:hover{
+    background-color: lightblue;
+}
+
+.left-col #profile_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+#imgContainer {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#imgLabel {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 11px;
+    display: none;
+}
+
+
+
+.left-col #name {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.left-col #job {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.left-col #contact {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.right-col #about {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#p_contact a {
+    font-style: italic;
+    color: blue;
+    text-decoration: none;
+}
+
+.skills {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position:relative;
+}
+
+.skills h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-right: 120px;
+}
+
+.skills dd {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.skills dd::before {
+    content: "• ";
+}
+
+.skills #toggleSkillBtn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: auto;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.skills #toggleSkillBtn:hover{
+    background-color: lightblue;
+}
+
+.left-col #experiences {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-col #experiences p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 10px 5px 10px;
+}
+
+.left-col #experiences p::before {
+    content: "• ";
+}
+
+#about p {
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px;
+}
+
+form input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover{
+    background-color: lightblue;
+}
+
+.message {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.message #msgBox {
+    width: 70%;
+    height: 10em;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.left-col > div, .left-col > .skills, .right-col > div {
+    margin-bottom: 20px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid black;
+    z-index: 1000;
+}
+
+/* DARK MODE*/
+
+* {
+    transition: background-color .3s, color .3s;
+}
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+.dark .navigation {
+    background-color: #1e1e1e;
+    border-bottom-color: white;
+}
+
+.dark .navigation a {
+    color: white;
+}
+
+.dark .navigation a:hover {
+    background-color: #333;
+    color: lightskyblue;
+}
+
+.dark #themeBtn {
+    background-color: white;
+    color: black;
+}
+
+.dark #themeBtn:hover {
+    background-color: lightskyblue;
+    color:white;
+}
+
+.dark #themeBtn:active {
+    background-color: #bbb;
+}
+
+.dark #editJobBtn {
+    background-color: #2a2a2a;
+    border-color: white;
+    color: white;
+}
+
+.dark #editJobBtn:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.dark #editJobBtn:active {
+    background-color: #bbb;
+}
+
+.dark #toggleSkillBtn {
+    background-color: #2a2a2a;
+    border-color: white;
+    color: white;
+}
+
+.dark #toggleSkillBtn:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.dark #toggleSkillBtn:active {
+    background-color: #bbb;
+}
+
+
+.dark #footer {
+    background-color: #1e1e1e;
+    border-top-color: white;
+}
+
+.dark .left-col > div,
+.dark .right-col > div,
+.dark #home,
+.dark #contact,
+.dark .skills,
+.dark #experiences,
+.dark #about,
+.dark .message {
+    background-color: #1a1a1a;
+    color: white;
+    border-color: white;
+}
+
+.dark #p_contact a {
+    color: lightskyblue;
+}
+
+.dark form input[type="text"] {
+    background-color: #2a2a2a;
+    border-color: white;
+    color: white;
+}
+
+.dark form input[type="submit"] {
+    background-color: #2a2a2a;
+    border-color: white;
+    color: white;
+}
+
+.dark form input[type="submit"]:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.dark .skills dd::before,
+.dark #experiences p::before {
+    color: white;
+}
