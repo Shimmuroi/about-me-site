@@ -1,0 +1,192 @@
+body {
+    background-image: url("background.png");
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+
+.navigation {
+    background-color: wheat;
+    padding: 20px 20px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: blue;
+    background-color: lightskyblue;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.layout {
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.left-col {
+    flex: 2;
+    width: 50%;
+}
+
+.right-col {
+    flex: 2;
+    width: 50%;
+}
+
+.left-col #home{
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-col #profile_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+.left-col #name{
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.left-col #job{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.left-col #contact{
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.right-col #about{
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#p_contact a{
+    font-style: italic;
+    color: blue;
+    text-decoration:none;
+}
+
+.skills {
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.skills dd {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.skills dd::before{
+    content: "• ";
+}
+
+.left-col #experiences{
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.left-col #experiences p{
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 10px 5px 10px;
+}
+
+.left-col #experiences p::before{
+    content: "• ";
+}
+
+#about p{
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px;
+}
+
+form input[type="text"]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"]{
+    width: 20%;
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: lightblue;
+    color: blue;
+    font-weight: bolder;
+}
+
+.message{
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.left-col > div, .left-col > .skills, .right-col > div {
+    margin-bottom: 20px;
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid black;
+    z-index: 1000;
+}
+
+
+
+
+
